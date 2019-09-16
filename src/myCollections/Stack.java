@@ -1,48 +1,47 @@
 package myCollections;
 
 public class Stack {
+	
 	private Object[] elements;
 	private int top;
+	private int amount = 0;
 	
 	public Stack() {
+		top=-1;
+	}
+	
+	public Object pop() {
+		Object aux;
 		
+		if(empty())
+		return null;
+		
+		aux=elements[top];
+		return aux;
 	}
 	
-	public T pop() {
-		return null;
-	}
-	
-	public T peek() {
-		return null;
-	}
 	
 	public int size() {
-		return 0;
+		return top+1;
 	}
 	
 	public boolean empty() {
-		return false;
+		
+		return top<0;
 	}
 	
-	public boolean push() {
-		return false;
+	public void push(Object toPush) {
+		if(size()<amount) {
+			elements[++top] = toPush;
+		}
+
 	}
 
-	public Object[] getElements() {
-		return elements;
-	}
 
-	public void setElements(Object[] elements) {
-		this.elements = elements;
-	}
-
-	public int getTop() {
+	public int peek() {
 		return top;
 	}
 
-	public void setTop(int top) {
-		this.top = top;
-	}
 	
 	
 }
