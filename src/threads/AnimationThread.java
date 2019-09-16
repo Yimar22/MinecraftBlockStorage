@@ -18,7 +18,7 @@ public class AnimationThread extends Thread{
 	   	
 		int cont = 0;
 		while(cont<=26) {
-			String id = "/images/block"+cont+".png";
+			String id = "/icons/block"+cont+".png";
 			
 			try {
 				
@@ -35,7 +35,7 @@ public class AnimationThread extends Thread{
 		if(msc.getFeature()==msc.QUICK_ACCESS) {
 			msc.getAddInventory().setVisible(false);
 		}
-		msc.setImageRandom("/images/"+inventory.getBlock()+".png");
+		msc.setImageRandom("/icons"+inventory.getBlock()+".png");
 		
 	}
 
