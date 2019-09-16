@@ -5,9 +5,12 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import model.*;
 
 public class MinecraftStorageController {
-
+	
+	private Inventory inventory;
+	
     @FXML
     private Button addInventary;
 
