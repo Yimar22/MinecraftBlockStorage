@@ -331,7 +331,7 @@ public class MinecraftStorageController {
 		
 			
 		
-		}
+		
 	}
 
 	@FXML
