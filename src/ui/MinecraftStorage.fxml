@@ -140,7 +140,7 @@
             <ImageView fx:id="number58" fitHeight="14.0" fitWidth="13.0" layoutX="436.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="block59" fitHeight="24.0" fitWidth="24.0" layoutX="453.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="number59" fitHeight="14.0" fitWidth="13.0" layoutX="463.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="generateBlock" fitHeight="80.0" fitWidth="79.0" layoutX="550.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="generateimgBlock" fitHeight="80.0" fitWidth="79.0" layoutX="550.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" />
             <Button fx:id="quickAccessFeature" layoutX="41.0" layoutY="221.0" mnemonicParsing="false" onAction="#showQuickAccessBar" prefHeight="25.0" prefWidth="129.0" text="QuickAccess Feature" />
             <Button fx:id="buildingFeature" layoutX="41.0" layoutY="257.0" mnemonicParsing="false" onAction="#showBuildingBar" prefHeight="25.0" prefWidth="129.0" text="Building Feature" />
             <Button fx:id="generateBlock" layoutX="654.0" layoutY="175.0" mnemonicParsing="false" onAction="#generateBlocks" prefHeight="25.0" prefWidth="65.0" text="Generate" />
