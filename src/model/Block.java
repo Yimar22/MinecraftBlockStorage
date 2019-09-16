@@ -1,10 +1,13 @@
 package model;
 
 public class Block {
+	
 	private int id;
 	private int amount;
 	
 	public Block(int id, int amount) {
+		this.id=id;
+		this.amount=amount;
 		
 	}
 
