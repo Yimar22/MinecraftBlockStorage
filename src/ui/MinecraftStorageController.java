@@ -319,15 +319,7 @@ public class MinecraftStorageController {
 	@FXML
 	public void initialize() {
 
-		inventory = new Inventory();
-		quickAccess = new QuickAccess();
-		feature = INVENTORY;
-
-	}
-
-	@FXML
-	void addBlockToInventary(ActionEvent event) {
-
+	
 	}
 
 	@FXML
