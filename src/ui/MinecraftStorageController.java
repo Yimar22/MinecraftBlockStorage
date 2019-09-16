@@ -294,7 +294,7 @@ public class MinecraftStorageController {
     private ImageView number59;
 
     @FXML
-    private Button generateBlock;
+    private ImageView generateimgBlock;
 
     @FXML
     private Button quickAccessFeature;
