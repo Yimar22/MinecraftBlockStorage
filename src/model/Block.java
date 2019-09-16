@@ -2,30 +2,42 @@ package model;
 
 public class Block {
 	
-	private int id;
-	private int amount;
+	private String id;
+	private String pathImg;
+	private Block next;
 	
-	public Block(int id, int amount) {
+	public Block(String id, String pathImg) {
 		this.id=id;
-		this.amount=amount;
+		this.pathImg=pathImg;
 		
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
-	public int getAmount() {
-		return amount;
+
+	public String getPathImg() {
+		return pathImg;
 	}
 
-	public void setAmount(int amount) {
-		this.amount = amount;
+	public void setPathImg(String pathImg) {
+		this.pathImg = pathImg;
 	}
+
+	public Block getNext() {
+		return next;
+	}
+
+	public void setNext(Block next) {
+		this.next = next;
+	}
+	
+	
 	
 	
 }

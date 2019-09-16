@@ -1,50 +1,66 @@
 package myCollections;
 
-import java.util.ArrayList;
-
 import model.Block;
 
-@SuppressWarnings("hiding")
-public class HashTable<Integer, Block> {
-	private int key;
-	private Block value;
+public class HashTable {
 	
-	private ArrayList<Block> blocks;
+	public static final int INVENTORY_SIZE = 27;
+	private Block[] blocks;
 	
-	public HashTable(int key, Block value){
-		this.key=key;
-		this.value=value;
+	public HashTable(){
+		blocks = new Block[INVENTORY_SIZE];
+		
 	}
 
-	public int getKey() {
-		return key;
-	}
-
-	public void setKey(int key) {
-		this.key = key;
-	}
-
-	public Block getValue() {
-		return value;
-	}
-
-	public void setValue(Block value) {
-		this.value = value;
-	}
 	
 	public boolean isEmpty() {
 		return false;
 	}
 	
-	public void insert(int k, Block v) {
-		
+	public boolean add(Block b) {
+		boolean could = true;
+		int counter = 1;
+		int pos = hash(b.getId());
+		if(blocks[pos] == null) {
+			blocks[pos] = b;	
+		}
+		else if(getCubesLength(pos) < 64) {
+			boolean added = false;
+			Block actual = 	blocks[pos]; 
+			while(!added && counter < 64) {
+				if(actual.getNext() == null) {
+					actual.setNext(b);
+					added = true;
+				} else {
+					actual = actual.getNext();
+				}
+			}
+			if(added == false) {
+				could = false;
+			}
+		}else {
+			could = false;
+		}
+		return could;
 	}
 	
-	public <Integer, Block> Object search(int k) {
-		return null;
+	public int getCubesLength(int x) {
+		int amount = 0;
+		Block current = blocks[x];
+		while( current != null) {
+			amount++;
+			current = current.getNext();
+		}
+		return amount;
 	}
+
 	
 	public void delete(int k) {
 		
+	}
+	
+	public int hash(String key) {
+		String[] parts = key.split("k");
+		return Integer.parseInt(parts[1]);
 	}
 }
