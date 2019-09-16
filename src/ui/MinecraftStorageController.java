@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import model.*;
+import myCollections.HashTable;
 import threads.AnimationThread;
 
 public class MinecraftStorageController {
@@ -319,7 +320,18 @@ public class MinecraftStorageController {
 	@FXML
 	public void initialize() {
 
-	
+		inventory = new Inventory();
+		quickAccess = new QuickAccess();
+		feature = INVENTORY;
+
+	}
+
+	@FXML
+	void addBlockToInventary(ActionEvent event) {
+		
+			
+		
+		}
 	}
 
 	@FXML

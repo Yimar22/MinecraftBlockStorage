@@ -63,4 +63,12 @@ public class HashTable {
 		String[] parts = key.split("k");
 		return Integer.parseInt(parts[1]);
 	}
+
+
+	public Block[] getBlocks() {
+		return blocks;
+	}
+
+	
+	
 }
